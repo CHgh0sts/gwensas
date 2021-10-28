@@ -1,0 +1,473 @@
+@media (max-width: 1400px){
+    .info {
+        text-align: center;
+        height: auto;
+    }
+    .info .right {
+        float: initial;
+        width: 100%;
+        height: auto !important;
+        max-height: 33vh;
+    }
+    .bgRotate {
+        top: -4vh !important;
+        height: 98%;
+    }
+    .header object.right, .containerHeader video.right, .containerHeader .lottie-player {
+        position: relative !important;
+        transform: translate(0,0) !important;
+        height: auto !important;
+        width: 60% !important;
+        min-width: 553px !important;
+        margin: 1vh 0 !important;
+    }
+    .containerHeaderGwenCloud {
+        margin-top: 13vh;
+        text-align: center;
+    }
+    .header div.txt {
+        text-align: left !important;
+    }
+    .txt {
+        margin: 0 auto !important;
+        width: 90% !important;
+    }
+    .containerHeaderGwenCloud div.txt {
+        text-align: center !important;
+    }
+    .txt h3, .txt h2, .txt h1 {
+        margin-top: 0 !important;
+    }
+    .txt h1 {
+        margin: 0 auto;
+    }
+    .centerMain {
+        display: block !important;
+        text-align: center;
+        padding-top: 15vh;
+    }
+    .centerMain .mainRight, .centerMain .mainLeft {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px){
+    .info object {
+        width: 90% !important;
+        min-width: 0;
+        height: auto;
+    }
+    .header object.right, .header video.right, .containerHeader .lottie-player {
+        width: 90% !important;
+        min-width: initial !important;
+    }
+    .header div.txt p {
+        padding: 2vh 0 !important;
+    }
+    .txt h1 {
+        font-size: 4vh;
+        width: 90%;
+    }
+    .txt h3 {
+        margin-top: 0 !important;
+        font-size: 2.5vh !important;
+    }
+    .txt {
+        font-size: 1.6vh;
+    }
+    .speak li {
+        transform: scale(.7) !important;
+    }
+}
+@media (max-width: 1800px){
+    .descBoxSpeak p {
+        margin: 2vh 0;
+        width: 100%;
+        max-width: 35vh;
+    }
+}
+@media (max-width: 1635px){
+    .aboutUs {
+        border-radius: 0;
+    }
+}
+@media (max-width: 1550px){
+    /*.SlideImgSpeak {*/
+    /*    width: 28vh;*/
+    /*}*/
+}
+@media (max-width: 1440px){
+    div.plan .offres {
+        overflow: hidden;
+    }
+    .boxBlue {
+       height: 35vh;
+    }
+    .textBoxBlue p {
+        display: flex;
+        margin: 2vh auto !important;
+        height: calc(100% - 17vh);
+        align-items: center;
+    }
+    .arrowRight, .arrowLeft {
+        width: 4.5vh;
+        height: 4.5vh;
+    }
+    .arrowRight i, .arrowLeft i {
+        font-size: 1.8vh;
+    }
+    div.plan .offres, .Team {
+        width: 33vh !important;
+        overflow-x: initial;
+        overflow-y: hidden;
+    }
+    .boxslide {
+        width: 90vh !important;
+    }
+    .offres::-webkit-scrollbar, .Team::-webkit-scrollbar {
+        background: transparent;
+        width: 0;
+        height: 0;
+        cursor: pointer;
+    }
+    .offres::-webkit-scrollbar-thumb, .Team::-webkit-scrollbar-thumb {
+        background: transparent;
+        border: none;
+    }
+    /*.slider .boxslide:after {*/
+    /*    display: block;*/
+    /*}*/
+}
+@media (max-width: 1350px){
+    .slideSpeakBox {
+        height: 30vh;
+    }
+    .login {
+        margin: 0 !important;
+        border: none !important;
+    }
+    .SlideImgSpeak {
+        width: 28vh;
+    }
+    .login:after {
+        position: absolute;
+        content: "";
+        transform: translate(-50%);
+        left: 50%;
+        height: 100%;
+        width: 50%;
+        border-top: .2vh solid #fff;
+        transition: .3s;
+    }
+    .login:hover:after {
+        width: 100%;
+        transition: .3s;
+    }
+    .descBoxSpeak img {
+        margin: 1vh;
+        width: auto;
+        max-height: 6vh;
+        height: auto;
+    }
+    .containerHeader div.txt h2 {
+        font-size: 2vh;
+    }
+}
+@media (max-width: 1250px){
+    .slideSpeak {
+        width: calc(100% - 8vh)
+    }
+    .Team li {
+        width: 25vh;
+    }
+    .boxSliderSpeak .arrowRight {
+        right: .5vh !important;
+    }
+    .boxSliderSpeak .arrowLeft {
+        left: .5vh !important;
+    }
+}
+@media (max-width: 1150px) {
+    .descBoxSpeak {
+        margin: auto;
+        text-align: center;
+        width: calc(100% - 28vh);
+    }
+    .descBoxSpeak h1 {
+        font-size: 2.5vh;
+    }
+    .descBoxSpeak h2 {
+        font-size: 1.5vh;
+    }
+    .descBoxSpeak p {
+        max-width: 95%;
+        font-size: 1.2vh;
+        margin: .5vh auto 0 auto;
+    }
+    .slideSpeak {
+        height: 100%;
+        background: #fff;
+        width: 100%;
+    }
+    .SlideImgSpeak {
+        height: auto;
+        width: 28vh;
+    }
+    .slideSpeakBoxBlue {
+        height: 30vh;
+    }
+    .SlideImgSpeakBlue {
+        width: 28vh;
+    }
+    .descBoxSpeak img {
+        margin: 0;
+        width: auto;
+        max-height: 6vh;
+        height: auto;
+    }
+    .parramOffre {
+        display: block;
+        width: 30vh;
+        height: auto;
+        text-align: center;
+    }
+    .parramOffre input[type="range"] {
+        margin: 3vh auto;
+        width: 90%;
+    }
+    .infoCursor, .parramOffre button {
+        width: 90%;
+        margin: 1vh auto;
+    }
+    .infoConso {
+        position: relative;
+        transform: translate(0,0);
+        width: 90%;
+        margin: 1vh auto;
+    }
+}
+@media (max-width: 1050px){
+
+    .main.center p {
+        height: auto;
+        margin: 0 auto;
+        width: 95%;
+    }
+    .descBoxSpeak p {
+        margin: 1vh auto !important;
+    }
+    .map .lieux {
+        position: absolute;
+        width: 6vh;
+        height: 6vh;
+    }
+    .map .lieux:before {
+        width: 4vh;
+        height: 4vh;
+    }
+}
+@media (max-width: 1000px){
+
+    .slideSpeak {
+        display: block;
+    }
+    div.plan .offres .offre  {
+        margin: 8vh 1vh 0 1vh !important;
+    }
+    div.plan .offres.YearsInfo .offre {
+        margin: 2vh 1vh 0 1vh !important;
+    }
+    .YearsInfo .boxslide {
+        height: 24vh !important;
+    }
+    div.plan .offres .boxslide {
+        height: 42vh;
+    }
+    .slideSpeakBlue {
+        display: block;
+    }
+    .slideSpeakBoxBlue {
+        height: 75vh;
+    }
+    .slideSpeakBox {
+        height: 75vh;
+    }
+    /*.sliderSpeak {*/
+    /*    height: auto;*/
+    /*}*/
+    .descBoxSpeak {
+        width: 90%;
+        height: 50%;
+        padding: 2vh 0 5vh 0;
+        margin: 0 auto;
+    }
+    .SlideImgSpeak, .SlideImgSpeakBlue {
+        width: 100%;
+        max-width: 45vh;
+        margin: 0 auto;
+        height: 60%;
+        border-radius: 0;
+        display: block;
+    }
+    .SlideImgSpeakBlue .slideImgBlue img {
+        width: 45vh;
+    }
+}
+@media (max-width: 950px){
+    .flexSlide1, .flexSlide2, .flexSlide3 {
+        display: block;
+        justify-content: space-evenly;
+    }
+    .boxflex object {
+        margin: 1vh 0;
+    }
+    .btnSlider {
+        margin: 3vh 0;
+    }
+    .sliderCloud .slide1 {
+        height: 50vh;
+    }
+    .sliderCloud .slide2 {
+        height: 65vh;
+    }
+    .sliderCloud .slide3 {
+        height: 110vh;
+    }
+    .flexSlide1, .flexSlide2 {
+        margin: 3vh 0;
+    }
+    .main {
+        padding: 2vh 0;
+    }
+    .sliderCloud .slide1 p, .sliderCloud .slide2 p {
+        opacity: .5;
+        font-size: 1.3vh;
+    }
+        /* --- flex 3 --- */
+    .flexSlide3 .boxflex {
+        width: 100%;
+        text-align: center;
+    }
+    .flexSlide3 .boxflex h4 {
+        color: rgba(62, 126, 250, 1);
+        margin: 1vh 0 .5vh 0;
+    }
+    .flexSlide3 .boxflex h2 {
+        font-size: 3vh;
+        font-weight: 800;
+    }
+    .flexSlide3 .boxflex h3 {
+        font-size: 1.5vh;
+        font-weight: 800;
+    }
+    .flexSlide3 .boxflex p {
+        margin: 2vh 0;
+        opacity: .5;
+        font-size: 1.3vh;
+    }
+    .flexSlide3 .boxflex a {
+        color: rgba(62, 126, 250, 1);
+    }
+    .sc-fzXfMy img {
+        width: 95% !important;
+        height: 95% !important;
+    }
+}
+@media (max-width: 850px){
+    .demi {
+        display: block;
+    }
+    .demi input:nth-child(1) {
+        width: 100%;
+        margin: .5vh 0 1vh 0!important;
+    }
+    .demi input:nth-child(2) {
+        width: 100%;
+        margin: .5vh 0 !important;
+    }
+    .aboutUs {
+        margin: 5vh 0 2vh 0;
+    }
+    .containerHeader {
+        margin: 8vh auto 0 auto;
+    }
+}
+@media (max-width: 700px){
+    div.contact h2.contactTitle, div.plan h2.contactTitle {
+        padding-top: 10vh;
+    }
+    .partenaires li object, .speak li object  {
+        width: 7vh;
+    }
+}
+@media (max-width: 650px){
+    .main {
+        width: 90%;
+    }
+}
+@media (max-width: 550px){
+    section.footer ul.typePaye {
+        display: block !important;
+        width: auto;
+    }
+    section.footer ul.typePaye li {
+        margin: 1vh auto !important;
+    }
+    section.footer ul.reseau li i {
+        font-size: 2vh !important;
+    }
+    .SlideImgSpeak, .SlideImgSpeakBlue {
+       height: 50%;
+        display: flex;
+    }
+    .slideSpeakBoxBlue {
+        height: 65vh;
+        width: 85%;
+        max-width: 40vh;
+    }
+    .slideSpeakBox {
+        height: 65vh;
+        width: 85%;
+        max-width: 40vh;
+    }
+}
+@media (max-width: 575px){
+    .slideImgBlue {
+        width: auto;
+    }
+}
+
+/*----------------- MeNU ------------------*/
+
+@media (max-width: 1350px){
+    nav.menu .btnMenu  {
+        display: block;
+    }
+    nav.menu ul {
+        display: block;
+        margin: 0;
+        width: 100%;
+        top: 7vh;
+        padding: 0;
+        background: transparent;
+        overflow: hidden;
+        height: 0;
+        transition: .2s;
+    }
+    nav.menu.bg ul {
+        background: linear-gradient(90deg, #4381FA, #6D9EFE);
+    }
+    nav.menu ul li {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4vh;
+    }
+}
+@media (max-width: 550px){
+    nav.menu a.logo {
+        margin-left: 0;
+    }
+}

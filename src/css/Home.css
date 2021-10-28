@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+    outline: none;
+    font-family: Poppins, Serif, sans-serif;
+    -webkit-tap-highlight-color: transparent !important;
+}
+:root {
+    --background: rgba(255, 255, 255, 1);
+    --chetwode-blue: rgba(132, 135, 245, 1);
+    --chicago: rgba(92, 92, 92, 1);
+    --deep-sapphire: rgba(10, 41, 103, 1);
+    --eerie-black: rgba(29, 29, 29, 1);
+    --mist-gray: rgba(196, 196, 196, 0.1);
+    --purple-heart: rgba(83, 20, 198, 1);
+}
+html {
+    --borderPage: 6vh;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    background: var(--background);
+    font-family: Poppins, Serif, sans-serif;
+}
+.EntrePage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 120vh;
+    z-index: 999999;
+    background: rgba(62, 126, 250, 1);
+    transition: .4s;
+}
+.EntrePage .before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: translate(0,0);
+    background: #fff;
+    transition: .4s;
+}
+.arrowUp {
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    background: linear-gradient(90deg, #4381FA, #6D9EFE);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    right: 0;
+    bottom: 0;
+    border-radius: 5vh;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%), 0 0 10px rgb(0 0 0 / 30%);
+    z-index: 999;
+    margin: 1vh;
+    opacity: 0;
+    transition: .3s;
+}
+nav.menu {
+    position: absolute;
+    width: 100%;
+    height: 7vh;
+    z-index: 15;
+    /* backdrop-filter: blur(10px); */
+    background: transparent;
+}
+nav.menu a.logo {
+    position: relative;
+    margin-left: var(--borderPage);
+    top: 0;
+}
+nav.menu a.logo img.svgMenu {
+    position: relative;
+    width: 11vh;
+}
+nav.menu ul {
+    position: absolute;
+    top: 0;
+    margin: calc(3.5vh - 1vh) var(--borderPage) 0 0;
+    right: 0;
+    width: auto;
+    display: flex;
+    list-style-type: none;
+}
+nav.menu ul li {
+    position: relative;
+    margin: 0;
+    height: 2.8vh;
+    padding: .4vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+    background: transparent;
+    transition: .3s;
+}
+nav.menu ul li:hover, nav.menu ul li.myPage {
+    background: #4381FA;
+    transition: .3s;
+}
+nav.menu ul li.login {
+    margin: 0 .5vh;
+    border: .2vh solid #fff;
+}
+av.menu ul li.invers {
+    background: #fff;
+}
+nav.menu ul li a {
+    color: #fff;
+    font-size: 1.4vh;
+    padding: .4vh 4vh;
+    text-decoration: none;
+    white-space: nowrap;
+}
+nav.menu ul li.invers {
+    background: #fff;
+}
+nav.menu ul li.invers a {
+    color: var(--purple-heart);
+}
+nav.menu .btnMenu {
+    position: absolute;
+    transform: translate(0,-50%);
+    top: 50%;
+    right: 0;
+    margin: 0 2vh 0 0;
+    height: 2.5vh;
+    width: 5vh;
+    background: rgba(255,255,255,0);
+    cursor: pointer;
+    transition: .1s;
+    display: none;
+    transition-delay: .05s;
+}
+
+.scroolAnim {
+    position: fixed;
+    text-align: center;
+    transform: translate(-50%,-100%);
+    left: 50%;
+    /* top: 100vh; */
+    bottom: -4vh;
+    height: 4vh;
+    width: 5vh;
+    z-index: 48;
+    font-size: 2vh;
+    color: #fff;
+}
+.scroolAnim i {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    animation: heartbeatScrool 1s infinite alternate;
+}
+.scroolAnim .arrowScrool {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    height: 3vh;
+    width: 100%;
+    animation: heartbeatScrool 1s infinite alternate;
+    animation-delay: .1s;
+}
+section.header {
+    position: relative;
+    box-sizing: initial;
+    width: 100%;
+    min-height: 125vh;
+    height: auto;
+    background-size: cover;
+    overflow-x: hidden;
+}
+img.bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    min-width: 150vh;
+    width: 100%;
+    height: 100%;
+}
+.info {
+    position: relative;
+    width: 100%;
+    max-width: 200vh;
+    margin: 0 auto;
+    height: 45vh;
+    transform: scale(1);
+    transition: .3s;
+}
+.containerHeader {
+    width: 90%;
+    margin: 15vh auto 0 auto;
+    color: #fff;
+    height: auto;
+    min-height: 50vh;
+}
+.info img, .info object {
+    position: relative;
+    height: 35vh;
+    margin: 5vh 0;
+    min-width: 40vh;
+    width: 35%;
+}
+.info .right {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 45vh;
+    /* min-width: 665px; */
+}
+.info object.right {
+    margin-right: 5%;
+    width: 50%;
+    height: 35vh;
+}
+.containerHeader object.right, .containerHeader video.right, .containerHeader .lottie-player {
+    position: absolute;
+    transform: translate(0, -50%);
+    width: 45%;
+    /* height: 45vh; */
+    top: 50%;
+    right: 0;
+}
+.info .left {
+    position: relative;
+    margin-left: 5%;
+}
+.info div.txt {
+    position: relative;
+    width: 45%;
+    padding: 1vh 0;
+}
+.info div.txt h2 {
+    font-size: 2vh;
+    margin: 15vh 0 1vh 0;
+}
+.containerHeader div.txt h2 {
+    font-size: 3vh;
+}
+.info div.txt p {
+    opacity: .7;
+    margin-bottom: 3vh;
+}
+.containerHeader div.txt p {
+    font-size: 1.5vh;
+    padding: 1vh 0 0 0;
+}
