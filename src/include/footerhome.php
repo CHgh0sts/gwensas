@@ -1,6 +1,6 @@
 <section class="menuBlur footer footerhome">
-    <img class="bg" src="src/img/Globals/footer/bgFooter.webp" alt="background footer home">
-    <div class="boxSliderSpeak">
+    <img class="bg" src="src/img/Globals/footers/2160/bgFooter-2160-100.webp" alt="background footer home">
+    <div class="boxSliderSpeak boxanime slide_popup">
         <div class="slideSpeakBox">
             <div class="sliderSpeak">
                 <div class="slideSpeak">

@@ -1,5 +1,5 @@
 <section class="menuBlur footer">
-    <img class="bg" src="src/img/Globals/footers/bgFooter-100.webp" alt="background footer shop">
+    <img class="bg" src="src/img/Globals/footers/2160/bgFooter-2160-100.webp" alt="background footer shop">
     <ul class="reseau" style="margin-top: 17vh;">
         <li><a href="https://twitter.com/GwensasM"><i class="fab fa-twitter"></i></a></li>
         <li><a href="https://www.facebook.com/gwensasMining/"><i class="fab fa-facebook-f"></i></a></li>

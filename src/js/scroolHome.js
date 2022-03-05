@@ -13,7 +13,7 @@ slideSpeakBlue.forEach(function (e) {
 
 let tailTab = tabDeTest.length;
 
-document.querySelector('.sliderSpeak').innerHTML = '<div class="slideSpeak"></div><div class="slideSpeak boxVisible"> </div> <div class="slideSpeak"></div>';
+document.querySelector('.sliderSpeak').innerHTML = '<div class="slideSpeak"></div><div class="slideSpeak boxVisible"> </div><div class="slideSpeak"></div>';
 
 let slides = document.querySelectorAll('.slideSpeak');
 slides.forEach(function () {

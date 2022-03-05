@@ -8,41 +8,43 @@ require "src/include/config.php";
 </section>
 <?php include "src/include/menu.php"; ?>
 <div class="scroolAnim black">
-    <i class="fas fa-mouse"></i>
-    <div class="arrowScrool"></div>
+    <a href="#container">
+        <i class="fas fa-mouse"></i>
+        <div class="arrowScrool"></div>
+    </a>
 </div>
 <section class="menuBlur header gwencloud">
 <!--    <img class="bgRotate" src="src/img/Globals/header/bgHeader.webp" alt="background header gwencloud">-->
     <picture>
-        <img class="bg" src="src/img/GwenCloud/headergwencloud.webp" alt="background header home">
+        <img class="bg" src="src/img/GwenCloud/vage2.webp" alt="background header home">
     </picture>
-    <div class="info containerHeaderGwenCloud">
+    <div class="info containerHeaderGwenCloud boxanime">
         <!--            <video muted class="right" src="src/vid/Gwen1.mov" autoplay loop poster="src/img/GWENCLOUD.svg"></video>-->
         <!--        <div class="lottie-player right">-->
         <!--            <lottie-player src="src/files/json/animation1.2.json" renderer="svg" autoplay loop>-->
-        <object style="margin-right: 0" class="right svgGwenCloudHeader" type="image/svg+xml" data="src/img/GwenCloud/GWENCLOUD.svg" ></object>
+        <object style="margin-right: 0" class="right svgGwenCloudHeader slide_popup" type="image/svg+xml" data="src/img/GwenCloud/GWENCLOUD.svg" ></object>
         <!--            </lottie-player>-->
         <!--        </div>-->
         <div class="txt left gwencloud">
-            <h1 style="letter-spacing: .2rem;"><?= langueRecup($boxtext, $lang, $file,'titleHeader') ?></h1>
-            <p style="margin-top: 2vh;letter-spacing: .1rem;font-size: 2.1vh"><?= langueRecup($boxtext, $lang, $file,'textHeader') ?></p>
-            <a class="button" href="#plan"><p><?= langueRecup($boxtext, $lang, $file,'btnHeader') ?></p></a>
+            <h1 class="slide_left" style="letter-spacing: .2rem;"><?= langueRecup($boxtext, $lang, $file,'titleHeader') ?></h1>
+            <p class="slide_left" style="margin-top: 2vh;letter-spacing: .1rem;font-size: 2.1vh"><?= langueRecup($boxtext, $lang, $file,'textHeader') ?></p>
+            <a class="button slide_left" href="#plan"><p><?= langueRecup($boxtext, $lang, $file,'btnHeader') ?></p></a>
         </div>
     </div>
 </section>
-<section class="menuBlur main">
+<section class="menuBlur boxanime main" id="container">
     <div class="sliderCloud">
         <div class="sliderCloudBox">
             <div class="slideCloud slide1">
-                <h2 class="title" style="padding: 0;"><?= langueRecup($boxtext, $lang, $file,'titleGwenCloundMain1') ?></h2>
-                <p><?= langueRecup($boxtext, $lang, $file,'subtitleGwenCloundMain') ?></p>
+                <h2 class="title slide_top" style="padding: 0;"><?= langueRecup($boxtext, $lang, $file,'titleGwenCloundMain1') ?></h2>
+                <p class="slide_bottom"><?= langueRecup($boxtext, $lang, $file,'subtitleGwenCloundMain') ?></p>
                 <div class="flexSlide1">
-                    <div class="boxflex">
+                    <div class="boxflex slide_left">
                         <object class="right" type="image/svg+xml" data="src/img/GwenCloud/GwenCloudSlide/slide1/slide1img1.svg"></object>
                         <h3><?= langueRecup($boxtext, $lang, $file,'titreSlide1Box1') ?></h3>
                         <p><?= langueRecup($boxtext, $lang, $file,'txtSlide1Box1') ?></p>
                     </div>
-                    <div class="boxflex">
+                    <div class="boxflex slide_right">
                         <object class="right" type="image/svg+xml" data="src/img/GwenCloud/GwenCloudSlide/slide1/slide1img2.svg"></object>
                         <h3><?= langueRecup($boxtext, $lang, $file,'titreSlide1Box2') ?></h3>
                         <p><?= langueRecup($boxtext, $lang, $file,'txtSlide1Box2') ?></p>
@@ -105,13 +107,13 @@ require "src/include/config.php";
             </div>
         </div>
         <div class="btnSlider">
-            <ul class="point">
+            <ul class="point slide_top">
             </ul>
             <ul class="btn">
-                <li>
+                <li class="slide_left">
                     <button class="left none"><i class="fas fa-arrow-left"></i></button>
                 </li>
-                <li>
+                <li class="slide_right">
                     <button class="right"><i class="fas fa-arrow-right"></i></button>
                 </li>
             </ul>
@@ -120,8 +122,8 @@ require "src/include/config.php";
 </section>
 <div class="menuBlur plan">
     <img class="bg" src="src/img/GwenCloud/footer.webp" alt="background footer GwenCloud">
-    <h2 class="contactTitle"><?= langueRecup($boxtext, $lang, $file,'TitlePlan') ?></h2>
-    <div id="plan" class="_working login">
+    <h2 class="contactTitle boxanime slide_bottom"><?= langueRecup($boxtext, $lang, $file,'TitlePlan') ?></h2>
+    <div id="plan" class="working boxanime login">
         <div class="slider offres">
             <div class="boxslide">
                 <?php
@@ -177,7 +179,7 @@ require "src/include/config.php";
                                 <img src="src/img/GwenCloud/Offres/start.svg" alt="Start Date icon">
                             </div>
                             <ul>
-                                <li><p>Start Date</p></li>
+                                <li><p><?= langueRecup($boxtext, $lang, $file,'simulateurDate') ?></p></li>
                                 <li><h4>Today</h4></li>
                             </ul>
                         </li>
@@ -193,22 +195,22 @@ require "src/include/config.php";
                 <p>Power (TH/s)</p>
             </div>
             <div class="infoConso">
-                <h3>0.547832 ₿/an</h3>
-                <p id="mined_eur_year">0€ miné / an</p>
+                <h3>0.547832 ₿/<?= langueRecup($boxtext, $lang, $file,'annee') ?></h3>
+                <p id="mined_eur_year">0€ miné / <?= langueRecup($boxtext, $lang, $file,'annee') ?></p>
             </div>
             <button><i class="fas fa-arrow-right"></i></button>
         </div>
         <div class="slider offres YearsInfo loadingOffre">
             <div class="boxslide">
                 <div class="offre Years duration-container" price="1" duration="12" durationDay="365">
-                    <h1>1 An</h1>
+                    <h1>1 <?= langueRecup($boxtext, $lang, $file,'annee') ?></h1>
                     <p>0€/TH/s/mois</p>
                     <h3>0€</h3>
                     <h2>0 ₿</h2>
                 </div>
                 <div class="offre Years duration-container" price="0.8" duration="24" durationDay="730">
                     <div class="solde">20%</div>
-                    <h1>2 Ans</h1>
+                    <h1>2 <?= langueRecup($boxtext, $lang, $file,'annees') ?></h1>
                     <p>0€/TH/s/mois</p>
                     <h3>0€</h3>
                     <h4 style="color: #aaa;font-size: 1.4vh;font-weight: 500;">au lieu de 0€</h4>
@@ -216,7 +218,7 @@ require "src/include/config.php";
                 </div>
                 <div class="offre Years duration-container" price="0.7" duration="36" durationDay="1095">
                     <div class="solde">30%</div>
-                    <h1>3 Ans</h1>
+                    <h1>3 <?= langueRecup($boxtext, $lang, $file,'annees') ?></h1>
                     <p>0€/TH/s/mois</p>
                     <h3>0€</h3>
                     <h4 style="color: #aaa;font-size: 1.4vh;font-weight: 500;">au lieu de 0€</h4>
@@ -224,15 +226,15 @@ require "src/include/config.php";
                 </div>
             </div>
         </div>
-        <h2 class="subtitle">Simulation de Production</h2>
-        <p style="margin: 0 0 1vh;opacity: 1;color: rgba(255,255,255,.5);font-size: 1.4vh">Au cours actuel de <span style="color: #fff;font-size: 1.4vh;">1₿ = </span><a class="NBT_BTC" href="https://fr.tradingview.com/symbols/BTCEUR/" style="color: #fff;font-size: 1.4vh;">2000 €</a></p>
+        <h2 class="subtitle"><?= langueRecup($boxtext, $lang, $file,'simuProd') ?></h2>
+        <p style="margin: 0 0 1vh;opacity: 1;color: rgba(255,255,255,.5);font-size: 1.4vh"><?= langueRecup($boxtext, $lang, $file,'courBTC') ?> <span style="color: #fff;font-size: 1.4vh;">1₿ = </span><a class="NBT_BTC" href="https://fr.tradingview.com/symbols/BTCEUR/" style="color: #fff;font-size: 1.4vh;">2000 €</a></p>
         <ul class="partenaires Rentability">
-            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="1"><p>1 Jour</p></li>
-            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="30"><p>1 Mois</p></li>
-            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="183"><p>6 Mois</p></li>
-            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="365"><p>1 An</p></li>
-            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="730"><p>2 Ans</p></li>
-            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="1095"><p>3 Ans</p></li>
+            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="1"><p>1 <?= langueRecup($boxtext, $lang, $file,'jour') ?></p></li>
+            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="30"><p>1 <?= langueRecup($boxtext, $lang, $file,'mois') ?></p></li>
+            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="183"><p>6 <?= langueRecup($boxtext, $lang, $file,'mois') ?></p></li>
+            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="365"><p>1 <?= langueRecup($boxtext, $lang, $file,'annee') ?></p></li>
+            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="730"><p>2 <?= langueRecup($boxtext, $lang, $file,'annees') ?></p></li>
+            <li onclick="partenaires(this.getAttribute('duration'), 0)" duration="1095"><p>3 <?= langueRecup($boxtext, $lang, $file,'annees') ?></p></li>
         </ul>
         <ul class="RentabilityInfo loadingOffre">
             <li>
@@ -277,12 +279,13 @@ require "src/include/config.php";
             </li>
         </ul>
     </div>
-    <button class="btn buyNow">Commencer Maintenant</button>
-    <h2>Paiements Securies Par</h2>
+    <button class="btn buyNow"><?= langueRecup($boxtext, $lang, $file,'btnStartSimul') ?></button>
+    <h2><?= langueRecup($boxtext, $lang, $file,'securpayment') ?></h2>
     <ul class="typePaye">
         <li><object class="right" type="image/svg+xml" data="src/img/Globals/footer/visa.svg" >Le navigateur ne peut pas lire le format svg</object></li>
         <li><object class="right" type="image/svg+xml" data="src/img/Globals/footer/Mastercard.svg" >Le navigateur ne peut pas lire le format svg</object></li>
         <li><object class="right" type="image/svg+xml" data="src/img/Globals/footer/bitcoin.svg" >Le navigateur ne peut pas lire le format svg</object></li>
+        <li><img src="src/img/Globals/footers/scellius.webp" alt="scellius logo"></li>
     </ul>
     <?php include "src/include/footerNotImg.php"; ?>
 </div>

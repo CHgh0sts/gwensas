@@ -5,6 +5,11 @@ lang.addEventListener('click', () => {
     lang.querySelector('ul').classList.toggle('openlang');
 })
 
+
+/*------------- opti de la pager web ----------------------*/
+
+let imgLazyLoad = document.querySelectorAll('img.lazyLoad');
+
 /*------- EntrePage ----------*/
 
 document.querySelectorAll('object').forEach((object) => {
@@ -13,6 +18,44 @@ document.querySelectorAll('object').forEach((object) => {
 
 const EntrePage = document.querySelector('section.EntrePage');
 const EntrePageBefore = document.querySelector('section.EntrePage .before');
+
+/*const reveal = gsap.utils.toArray('.boxanime');
+reveal.forEach((text, i)=> {
+    ScrollTrigger.create({
+        trigger: text,
+        toggleClass: 'reveal',
+        start: 'top 85%',
+        end: 'top 5%',
+        markers: false
+    })
+})*/
+
+/* --------------------------- animScrool ---------------------------------- */
+const optionsScroolAnime = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.6
+}
+const handleIntersect = function(entries, observer) {
+    entries.forEach(function(entry){
+        console.log(entry.intersectionRatio)
+        if (entry.intersectionRatio > 0.6) {
+            entry.target.classList.add('reveal')
+            observer.unobserve(entry.target)
+        }
+    })
+}
+window.addEventListener('load', () => {
+    setInterval(() => {
+        let observer = new IntersectionObserver(handleIntersect, optionsScroolAnime);
+        document.querySelectorAll('.boxanime').forEach((r) => {
+            observer.observe(r)
+        })
+    }, 500)
+
+})
+/* --------------------------- animScrool ---------------------------------- */
+
 window.addEventListener('load', () => {
     console.log('Js Load !!');
     EntrePage.style.transform = "translate(0,-100%)";
@@ -95,6 +138,40 @@ function ContactUs() {
         closePopup = 0;
     })
 }
+
+function ContactUsSend() {
+    let closePopup = 0;
+    let popupback = document.querySelector('.popupbackSend');
+    let popup = document.querySelector('.popupSend');
+    popupback.classList.add('open');
+    popupback.classList.remove('close');
+    setTimeout(() => {
+        document.querySelector('body').style.overflowY = "hidden";
+    },100)
+    setTimeout(() => {
+        popup.style = 'transform: translateY(0)';
+    }, 700)
+    popup.addEventListener('click', () => {
+        closePopup = 1;
+    })
+    popupback.addEventListener('click', () => {
+        if(closePopup === 0) {
+            popup.style = 'transform: translateY(-100vh)';
+            setTimeout(() => {
+                popupback.classList.add('close');
+                popupback.classList.remove('open');
+                setTimeout(() => {
+                    document.querySelector('body').style.overflowY = "initial";
+                },100)
+                setTimeout(() => {
+                    popup.style = 'transform: translateY(100vh)';
+                }, 700)
+            },300)
+        }
+        closePopup = 0;
+    })
+}
+
 function ContactUsVid() {
     let closePopup = 0;
     let popupback = document.querySelector('.popupback');
@@ -275,6 +352,11 @@ const menu = document.querySelector('.menu');
 const scroolAnim = document.querySelector('.scroolAnim');
 window.addEventListener('scroll', () => {
     scroolAnim.style.opacity = (1 - (window.scrollY / 100))
+    if ((1 - (window.scrollY / 100)) < 0) {
+        scroolAnim.style.display = "none"
+    }else {
+        scroolAnim.style.display = "block"
+    }
     menuBlur.forEach((blur) => {
         blur.style.filter = "blur(0)";
     })
